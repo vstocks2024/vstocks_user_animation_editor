@@ -5,6 +5,10 @@ import React, { useEffect } from 'react'
 import { StoreContext } from '../store';
 import { fabric } from 'fabric';
 import { MainCanvas } from './MainCanvas';
+import { MainPart } from './MainPart';
+import { Menu } from './Menu';
+import { Properties } from './Properties';
+import { CanvasFooter } from './CanvasFooter';
 
 export const Editor = observer(() => {
     const store = React.useContext(StoreContext);
@@ -39,8 +43,14 @@ export const Editor = observer(() => {
         
     
   return (
-    <main>
+    <main className='flex flex-col'>
+    <MainPart/>
+    <div className='flex flex-row w-full h-[510px]'>
+      <Menu/>
     <MainCanvas/>
+    <Properties/>
+    </div>
+    <CanvasFooter/>
     </main>
   )
 });
