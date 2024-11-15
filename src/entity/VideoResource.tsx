@@ -15,8 +15,7 @@ export const VideoResource=observer(()=>{
     
 const supabaseUrl = import.meta.env.SUPABASE_URL!;
 const supabaseKey = import.meta.env.SUPABASE_KEY!;
-// const supabaseUrl=`https://uqmdwdzmfmvegzpietkc.supabase.co`;
-// const supabaseKey=`eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVxbWR3ZHptZm12ZWd6cGlldGtjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjk4OTY0NjUsImV4cCI6MjA0NTQ3MjQ2NX0.T67Zml6gd1kFpcOxLZ9FpMbNhafugpSmeLn40RurmvI`;
+
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function handleFetchData(){
