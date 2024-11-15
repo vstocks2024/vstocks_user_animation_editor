@@ -12,9 +12,7 @@ export const CanvasFooter = observer(() => {
 
   return (
     <div className="bg-[#151515] relative w-full">
-   
       <button
-        
         className={`absolute flex min-[960px]:hidden -top-[calc(50%-10px)]  left-[calc(50%-20px)]`}
       >
         <BsPlusCircleFill color="#2E67DD" size={40} />

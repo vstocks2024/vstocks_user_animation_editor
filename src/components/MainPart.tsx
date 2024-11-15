@@ -90,14 +90,6 @@ export const MainPart = observer(() => {
           </button>
         </div>
         <div className="inline-flex flex-row items-center  justify-end  w-full">
-          <button
-          
-            className="w-10 h-10"
-          >
-            <span>
-              <MdFullscreen size={24} className=" cursor-pointer" />
-            </span>
-          </button>
           <button className="w-10 h-10">
             <span>
               <MdDelete
@@ -110,7 +102,6 @@ export const MainPart = observer(() => {
             <span>
               <MdPlayArrow
                 size={24}
-                
                 className="cursor-pointer"
               ></MdPlayArrow>
             </span>

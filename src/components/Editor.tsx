@@ -9,6 +9,7 @@ import { MainPart } from './MainPart';
 import { Menu } from './Menu';
 import { Properties } from './Properties';
 import { CanvasFooter } from './CanvasFooter';
+import { Resources } from './Resources';
 
 export const Editor = observer(() => {
     const store = React.useContext(StoreContext);
@@ -47,6 +48,7 @@ export const Editor = observer(() => {
     <MainPart/>
     <div className='flex flex-row w-full h-[510px]'>
       <Menu/>
+      {store.selectedMenuOption===null ? null :<Resources/>}
     <MainCanvas/>
     <Properties/>
     </div>
