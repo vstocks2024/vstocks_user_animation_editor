@@ -13,8 +13,8 @@ type VideoResourceProps={
 export const VideoResource=observer(()=>{
     const store = useContext(StoreContext);
     
-const supabaseUrl = import.meta.env.SUPABASE_URL!;
-const supabaseKey = import.meta.env.SUPABASE_KEY!;
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
