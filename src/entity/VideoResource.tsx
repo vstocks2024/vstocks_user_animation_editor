@@ -5,13 +5,14 @@ import { observer } from "mobx-react";
 import { useContext, useEffect } from "react";
 import { StoreContext } from "../store";
 
-type VideoResourceProps={
-    key:string;
-    url:string;
-};
+// type VideoResourceProps={
+//     key:string;
+//     url:string;
+// };
 
 export const VideoResource=observer(()=>{
     const store = useContext(StoreContext);
+    console.log(store);
     
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;

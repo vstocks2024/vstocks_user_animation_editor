@@ -29,7 +29,7 @@ export const VideoResourcesPanel = observer(() => {
       const formData = new FormData();
       formData.append("newvideo", file);
       await axios
-        .post(`${process.env.VITE_PUBLIC_URL}/new_video`, formData, {
+        .post(`${import.meta.env.VITE_PUBLIC_URL}/new_video`, formData, {
           headers: { "Content-Type": "multipart/form-data" },
         })
         .then((resolve) => {
