@@ -5,11 +5,7 @@ import { StoreContext } from "../store";
 import { observer } from "mobx-react";
 import { VideoResource } from "../entity/VideoResource";
 import { UploadButton } from "../shared/UploadButton";
-
 import axios from "axios";
-
-
-
 export const VideoResourcesPanel = observer(() => {
   const store = React.useContext(StoreContext);
   
@@ -60,7 +56,7 @@ export const VideoResourcesPanel = observer(() => {
         onChange={handleFileChange}
       />
       <div className="p-0.5  w-full">
-        {}
+        <VideoResource/>
       </div>
     </div>
   );
